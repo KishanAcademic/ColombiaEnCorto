@@ -1,0 +1,139 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+:root {
+	--color-primario: #1A004C;
+	--color-neutro1: #491F99;
+	--color-neutro2: #5C3D99;
+	--color-neutro3: #3D00B2;
+	--color-neutro4: #480A99;
+	--color-acento: #4CC9F0;
+	--color-semantico1: #F72585;
+	--color-semantico2: #B5179E;
+}
+
+
+
+body{
+	font-family: 'Reem Kufi Fun', sans-serif;
+}
+
+.btn:hover{
+	background-color: var(--color-semantico1);
+}
+
+.nav{
+	background-color: var(--color-primario);
+	color: var(--color-acento);
+	border: 0px;
+	height: 50px;
+	font-family: 'Reem Kufi Fun', sans-serif;
+}
+
+.nav-item{
+	height: 100%;
+}
+
+.nav-link{
+	height: 100%;
+}
+.nav-link:hover{
+	color: var(--color-semantico1);
+	border: 0px;
+}
+
+.img-icon{
+	width: 30px;
+	height: 30px;
+}
+
+#merch{
+	background-color: var(--color-primario);
+	color: var(--color-acento);
+}
+#titulo{
+	text-align: center;
+	padding: 40px 0px 40px 0px;
+
+}
+
+#merchSlider{
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0px 0px 0px 0px;
+}
+
+.card{
+	background-color: var(--color-neutro3);
+	margin: 20px;
+}
+.card-img-top{
+	height: 400px;
+}
+#imgrecom{
+	height: 100px;
+}
+
+
+
+#sinopsis{
+	width: 60%;
+	height: 1000px;
+	background-color: var(--color-neutro3);
+	color: var(--color-acento);
+}
+#sinopsis-text{
+	display: flex;
+	padding: 40px 40px 40px 40px;
+}
+
+
+#Autor{
+	width: 40%;
+	height: 1000px;
+	background-color: var(--color-acento);
+}
+#autor-img{
+	height: 400px;
+}
+#autor-text{
+	height: 400px;
+	color: var(--color-primario);
+	text-align: center;
+}
+
+
+#footer{
+	background-color: var(--color-neutro3);
+	color: var(--color-semantico1);
+}
+
+
+@media (max-width:800px){
+	.nav{
+		background-color: var(--color-semantico2);
+		color: var(--color-primario);
+	}
+	#merch{
+		background-color: var(--color-semantico2);
+		color: var(--color-primario);
+	}
+	#footer{
+		background-color: var(--color-neutro4);
+		color: var(--color-primario);
+	}
+	.card{
+		background-color: var(--color-neutro4);
+	}
+	#sinopsis{
+		background-color: var(--color-neutro4);
+	}
+	#sinopsis-text{
+		font-size: 4px;
+	}
+	#Autor{
+		background-color: var(--color-neutro2);
+	}
+}
